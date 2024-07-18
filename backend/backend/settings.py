@@ -28,6 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['18.191.220.180', 'localhost', '127.0.0.1']
 
 
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -42,8 +43,18 @@ INSTALLED_APPS = [
     'rest_framework',
 ]
 
-CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOWED_ORIGINS = [
+    "https://your-frontend-domain.com",
+    "https://another-allowed-domain.com",
+]
 
+CORS_ALLOWED_ORIGINS = [
+    "https://react-student.s3.us-east-2.amazonaws.com",
+    "https://react-student.s3.us-east-2.amazonaws.com",
+]
+
+CORS_ALLOW_ALL_ORIGINS  = True
+CORS_ALLOW_CREDENTIALS = True
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
@@ -54,6 +65,8 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+SECURE_REFERRER_POLICY = 'strict-origin-when-cross-origin'
 
 ROOT_URLCONF = 'backend.urls'
 
