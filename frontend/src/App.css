@@ -1,0 +1,52 @@
+body,
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.app-logo {
+  padding-left: 50px;
+}
+
+.sidebar {
+  display: flex;
+  height: 100vh;
+  float: left;
+  overflow: "scroll initial";
+}
+
+.side-container {
+  padding-top: 30px;
+}
+
+.side-row {
+  padding: 30px;
+}
+
+.react-bootstrap-table thead {
+  position: sticky;
+  top: 0;
+  background-color: #333;
+  z-index: 1021;
+  color: white;
+}
+
+.headingCSS{
+  padding: 0;
+  font-size: 30px;
+  font-weight: 600;
+  padding-left: 10px;
+
+}
+
+.side-row {
+    padding: 30px;
+}
+
+
+.cardCSSMain{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border-radius: 15px;
+  margin-top: 13px;
+}
